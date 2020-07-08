@@ -13,6 +13,31 @@ main =
     div [ class "container" ]
         [ div [ class "header" ] [ text "HEADER" ]
         , div [ class "menu" ] [ text "MENU" ]
-        , div [ class "content" ] [ text "CONTENT" ]
+        , div [ class "content", style "display" "block", style "overflow-y" "scroll" ] contents
         , div [ class "footer" ] [ text "FOOTER" ]
+        ]
+
+
+contents : List (Html.Html Msg)
+contents =
+    [ content
+    , content
+    , content
+    , content
+    , content
+    , content
+    , content
+    , content
+    , content
+    , content
+    , content
+    , content
+    , content
+    ]
+
+
+content : Html.Html Msg
+content =
+    div []
+        [ text "CONTENT"
         ]
