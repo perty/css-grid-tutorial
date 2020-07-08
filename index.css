@@ -25,3 +25,27 @@
 .footer {
     grid-area: f;
 }
+
+.row {
+    width: 100%;
+    display: flex;
+    padding: 5px;
+}
+
+.column {
+    flex-direction: column;
+
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.fill-available {
+    flex-grow: 4;
+}
+
+.actionButton {
+    background-color: #ffcc5c;
+    font-size: medium;
+}
